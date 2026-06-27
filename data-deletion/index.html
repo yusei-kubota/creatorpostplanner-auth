@@ -4,97 +4,125 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>データ削除案内 | CreatorPostPlanner</title>
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #f5f5f7;
-      color: #111;
-    }
-
-    body {
-      margin: 0;
-      padding: 42px 22px;
-    }
-
-    main {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 18px 48px rgb(0 0 0 / 8%);
-      margin: 0 auto;
-      max-width: 860px;
-      padding: 34px;
-    }
-
-    h1 {
-      font-size: 32px;
-      line-height: 1.25;
-      margin: 0 0 8px;
-    }
-
-    h2 {
-      border-top: 1px solid #eee;
-      font-size: 20px;
-      margin: 28px 0 10px;
-      padding-top: 22px;
-    }
-
-    p, li {
-      color: #444;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    ol {
-      padding-left: 22px;
-    }
-
-    a {
-      color: #111;
-      font-weight: 700;
-      text-underline-offset: 3px;
-    }
-
-    .meta {
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-  </style>
+  <meta name="description" content="CreatorPostPlannerで保存されたSNS連携情報、投稿管理データ、OAuthアクセス権の削除方法を説明します。">
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>データ削除案内</h1>
-    <p class="meta">最終更新日: 2026年6月28日</p>
+  <header class="site-header">
+    <a class="brand" href="../">CreatorPostPlanner</a>
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="../privacy/">プライバシーポリシー</a>
+      <a href="../terms/">利用規約</a>
+      <a href="../data-deletion/">データ削除案内</a>
+    </nav>
+  </header>
 
-    <p>
-      CreatorPostPlannerで保存されたSNS連携情報と投稿管理データは、以下の方法で削除できます。
-    </p>
+  <main class="page legal">
+    <article class="card">
+      <h1>データ削除案内</h1>
+      <p class="meta">最終更新日: 2026年6月28日</p>
 
-    <h2>アプリ内で削除する方法</h2>
-    <ol>
-      <li>CreatorPostPlannerを開きます。</li>
-      <li>ホーム画面で削除したいSNSを開きます。</li>
-      <li>詳細画面のログアウトまたは削除操作を実行します。</li>
-      <li>該当SNSのログイン情報、保存済み投稿データ、目標情報が端末から削除されます。</li>
-    </ol>
+      <p>
+        このページでは、CreatorPostPlannerで保存されたSNS連携情報、投稿管理データ、
+        OAuthアクセス権を削除または解除する方法を説明します。
+      </p>
 
-    <h2>Googleアカウント側でアクセスを取り消す方法</h2>
-    <p>
-      YouTube連携を解除する場合は、Googleアカウントのセキュリティ設定から
-      CreatorPostPlannerのアクセスを取り消すこともできます。
-    </p>
-    <p>
-      <a href="https://myaccount.google.com/permissions" rel="noopener">Googleアカウントのアクセス権限ページ</a>
-    </p>
+      <section class="legal-section">
+        <h2>1. アプリ内でSNS連携データを削除する方法</h2>
+        <p>アプリ内から、連携済みSNSごとのデータを削除できます。</p>
+        <ol>
+          <li>CreatorPostPlannerを開きます。</li>
+          <li>ホーム画面で削除したいSNSカードを開きます。</li>
+          <li>詳細画面の「ログアウト」または「削除」を選択します。</li>
+          <li>確認画面で削除を実行します。</li>
+        </ol>
+        <p>
+          この操作により、該当SNSのログイン維持情報、保存済みの目標、URL、メモ、
+          取得済み投稿データが端末から削除されます。
+        </p>
+      </section>
 
-    <h2>削除依頼</h2>
-    <p>
-      削除に関する問い合わせは、creatorpostplanner@gmail.com までご連絡ください。
-      連絡時には、削除対象のSNS種別とアプリ内で表示されるアカウント名を記載してください。
-    </p>
+      <section class="legal-section">
+        <h2>2. アプリ全体のデータを削除する方法</h2>
+        <p>
+          iOSのホーム画面からCreatorPostPlannerを削除すると、アプリ内に保存された投稿予定、
+          目標、メモ、取得済みデータが端末から削除されます。
+        </p>
+        <p class="notice">
+          端末からアプリを削除しても、GoogleやInstagram側で発行済みのアクセス権が残る場合があります。
+          完全に連携を解除したい場合は、以下の外部サービス側の解除手順も実行してください。
+        </p>
+      </section>
 
-    <p><a href="../">トップへ戻る</a></p>
+      <section class="legal-section">
+        <h2>3. Google / YouTubeのアクセス権を取り消す方法</h2>
+        <p>
+          YouTube連携を完全に解除するには、Googleアカウント側でCreatorPostPlannerのアクセス権を取り消してください。
+        </p>
+        <ol>
+          <li><a href="https://myaccount.google.com/permissions" rel="noopener">Googleアカウントのアクセス権限ページ</a>を開きます。</li>
+          <li>CreatorPostPlannerを選択します。</li>
+          <li>「アクセス権を削除」または同等の解除操作を実行します。</li>
+        </ol>
+        <p>
+          この操作により、CreatorPostPlannerは以後、そのGoogleアカウントのYouTube情報を取得できなくなります。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4. Instagram / Metaの連携を解除する方法</h2>
+        <p>
+          Instagram連携を完全に解除するには、InstagramまたはMeta側のアプリ連携管理画面から
+          CreatorPostPlannerのアクセス権を削除してください。
+        </p>
+        <ol>
+          <li>InstagramまたはMetaの設定画面を開きます。</li>
+          <li>アプリとウェブサイト、またはビジネス統合に関する設定を開きます。</li>
+          <li>CreatorPostPlannerを選択します。</li>
+          <li>アクセス削除または連携解除を実行します。</li>
+        </ol>
+        <p>
+          この操作により、CreatorPostPlannerは以後、そのInstagramアカウントの情報を取得できなくなります。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>5. メールで削除を依頼する方法</h2>
+        <p>
+          アプリ内操作ができない場合、または削除について確認したい場合は、以下のメールアドレスまでご連絡ください。
+        </p>
+        <p><a href="mailto:creatorpostplanner@gmail.com">creatorpostplanner@gmail.com</a></p>
+        <p>お問い合わせ時には、可能な範囲で以下を記載してください。</p>
+        <ul>
+          <li>削除対象のSNS種別（YouTubeまたはInstagram）</li>
+          <li>アプリ内に表示されているアカウント名またはユーザーネーム</li>
+          <li>削除したいデータの種類（SNS連携、投稿予定、メモ、全データなど）</li>
+        </ul>
+        <p>
+          受領後、本人確認や削除対象の確認が必要な場合があります。確認後、合理的な範囲で速やかに対応します。
+          原則として30日以内の対応を目安とします。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6. 削除後に残る可能性がある情報</h2>
+        <p>
+          外部SNS自体に保存されている投稿、チャンネル、プロフィール、コメント、いいねなどは、
+          CreatorPostPlannerから削除しても各SNS上には残ります。外部SNS上のデータ削除は、
+          YouTube、Google、Instagram、Metaの各サービス上で行ってください。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7. お問い合わせ</h2>
+        <p>
+          データ削除に関するお問い合わせは、以下のメールアドレスまでご連絡ください。
+        </p>
+        <p><a href="mailto:creatorpostplanner@gmail.com">creatorpostplanner@gmail.com</a></p>
+      </section>
+
+      <p class="footer"><a href="../">トップへ戻る</a></p>
+    </article>
   </main>
 </body>
 </html>

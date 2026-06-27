@@ -4,124 +4,195 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>プライバシーポリシー | CreatorPostPlanner</title>
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #f5f5f7;
-      color: #111;
-    }
-
-    body {
-      margin: 0;
-      padding: 42px 22px;
-    }
-
-    main {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 18px 48px rgb(0 0 0 / 8%);
-      margin: 0 auto;
-      max-width: 860px;
-      padding: 34px;
-    }
-
-    h1 {
-      font-size: 32px;
-      line-height: 1.25;
-      margin: 0 0 8px;
-    }
-
-    h2 {
-      border-top: 1px solid #eee;
-      font-size: 20px;
-      margin: 28px 0 10px;
-      padding-top: 22px;
-    }
-
-    p, li {
-      color: #444;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #111;
-      font-weight: 700;
-      text-underline-offset: 3px;
-    }
-
-    .meta {
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-  </style>
+  <meta name="description" content="CreatorPostPlannerのプライバシーポリシー。取得するSNSデータ、利用目的、保存、削除、第三者提供について説明します。">
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>プライバシーポリシー</h1>
-    <p class="meta">最終更新日: 2026年6月28日</p>
+  <header class="site-header">
+    <a class="brand" href="../">CreatorPostPlanner</a>
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="../privacy/">プライバシーポリシー</a>
+      <a href="../terms/">利用規約</a>
+      <a href="../data-deletion/">データ削除案内</a>
+    </nav>
+  </header>
 
-    <p>
-      CreatorPostPlannerは、SNSクリエイターが投稿予定、目標、投稿結果を管理するためのiOSアプリです。
-      本ポリシーでは、CreatorPostPlannerにおけるデータの取得、利用、保存、削除について説明します。
-    </p>
+  <main class="page legal">
+    <article class="card">
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">最終更新日: 2026年6月28日</p>
 
-    <h2>取得する情報</h2>
-    <p>ユーザーが連携した場合、以下の情報を取得します。</p>
-    <ul>
-      <li>YouTube: チャンネル名、ハンドル、チャンネル登録者数、投稿動画のタイトル、投稿日、URL、サムネイル、再生数、いいね数、コメント数</li>
-      <li>Instagram: ユーザーネーム、フォロワー数、投稿のキャプション、投稿日、URL、サムネイル、再生数、いいね数、コメント数</li>
-      <li>ユーザー入力情報: 目標数、投稿予定、タイトル、URL、メモ、サムネイル画像</li>
-    </ul>
+      <p>
+        CreatorPostPlanner（以下「本アプリ」といいます）は、SNSクリエイターがYouTubeおよびInstagramの
+        投稿予定、目標、投稿結果を管理するためのiOSアプリです。本ポリシーは、本アプリにおける情報の取得、
+        利用、保存、第三者提供、削除方法について説明するものです。
+      </p>
 
-    <h2>利用目的</h2>
-    <ul>
-      <li>ホーム画面でSNSごとの現在数と目標数を表示するため</li>
-      <li>カレンダーに投稿予定と投稿済みコンテンツを表示するため</li>
-      <li>投稿ごとの再生数、いいね数、コメント数を分析するため</li>
-      <li>ユーザーが入力したURLやメモを管理するため</li>
-    </ul>
+      <section class="legal-section">
+        <h2>1. 適用範囲</h2>
+        <p>
+          本ポリシーは、本アプリおよび本アプリに関連して提供するWebページに適用されます。
+          YouTube、Google、Instagram、Metaなどの外部サービスには、それぞれのプライバシーポリシーと利用規約が適用されます。
+        </p>
+      </section>
 
-    <h2>保存方法</h2>
-    <p>
-      現在のバージョンでは、取得した投稿情報、目標、メモはユーザーの端末内に保存されます。
-      OAuthのログイン維持に必要なトークンはiOSのKeychainに保存されます。
-      本アプリは、取得したYouTubeまたはInstagramのデータを第三者へ販売しません。
-    </p>
+      <section class="legal-section">
+        <h2>2. 取得する情報</h2>
+        <p>
+          本アプリは、ユーザーが明示的にSNS連携を行った場合、またはユーザーがアプリ内で入力した場合に限り、
+          以下の情報を取得します。
+        </p>
 
-    <h2>第三者サービス</h2>
-    <p>
-      本アプリは、YouTube Data API ServicesおよびInstagram APIを使用します。
-      これらのサービスの利用には、各サービス提供元の規約とプライバシーポリシーが適用されます。
-    </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>区分</th>
+                <th>取得する情報</th>
+                <th>取得方法</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YouTube連携</td>
+                <td>チャンネル名、チャンネルハンドル、チャンネル登録者数、投稿動画のタイトル、投稿日、URL、サムネイル、再生数、いいね数、コメント数</td>
+                <td>ユーザーがGoogle OAuthで許可した後、YouTube Data API v3から読み取り専用で取得</td>
+              </tr>
+              <tr>
+                <td>Instagram連携</td>
+                <td>ユーザーネーム、フォロワー数、投稿のキャプション、投稿日、URL、サムネイル、再生数、いいね数、コメント数</td>
+                <td>ユーザーがInstagram OAuthで許可した後、Instagram APIから取得</td>
+              </tr>
+              <tr>
+                <td>ユーザー入力情報</td>
+                <td>目標数、投稿予定、タイトル、URL、メモ、手動で追加したサムネイル画像</td>
+                <td>ユーザーによるアプリ内入力</td>
+              </tr>
+              <tr>
+                <td>ログイン維持情報</td>
+                <td>OAuthの更新に必要なトークン</td>
+                <td>各SNSのOAuth認証後に取得し、iOS Keychainに保存</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <h2>YouTube API Services</h2>
-    <p>
-      本アプリはYouTube Data API Servicesを使用します。ユーザーはGoogleのセキュリティ設定ページから、
-      いつでも本アプリのGoogleアカウントへのアクセスを取り消すことができます。
-      Googleのプライバシーポリシーは
-      <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>
-      で確認できます。
-    </p>
+      <section class="legal-section">
+        <h2>3. 利用目的</h2>
+        <p>本アプリは、取得した情報を以下の目的で利用します。</p>
+        <ul>
+          <li>ホーム画面でSNSごとの現在数、目標数、進捗を表示するため</li>
+          <li>カレンダーに投稿予定および投稿済みコンテンツを表示するため</li>
+          <li>投稿ごとのタイトル、投稿日、URL、サムネイル、再生数、いいね数、コメント数を確認できるようにするため</li>
+          <li>ユーザーが入力したURL、メモ、目標を保存・編集できるようにするため</li>
+          <li>ユーザー本人の投稿結果を分析し、投稿管理を補助するため</li>
+          <li>不具合対応、問い合わせ対応、セキュリティ維持のため</li>
+        </ul>
+      </section>
 
-    <h2>データ削除</h2>
-    <p>
-      アプリ内のログアウトまたはSNS削除操作により、端末内に保存された該当SNSのログイン情報と関連データを削除できます。
-      詳細は<a href="../data-deletion/">データ削除案内</a>をご確認ください。
-    </p>
+      <section class="legal-section">
+        <h2>4. YouTube API Servicesの利用</h2>
+        <p>
+          本アプリは、YouTube Data API Servicesを使用します。YouTube連携では
+          <code>https://www.googleapis.com/auth/youtube.readonly</code> の読み取り専用スコープを使用し、
+          ユーザー本人のYouTubeチャンネルおよび投稿動画の情報を取得します。
+        </p>
+        <p>
+          本アプリは、YouTube上の動画の投稿、編集、削除、コメント投稿、チャンネル設定の変更を行いません。
+          Google APIから受け取った情報の利用は、
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>
+          （Limited Use要件を含みます）に従います。
+        </p>
+        <p>
+          ユーザーは、Googleアカウントの
+          <a href="https://myaccount.google.com/permissions" rel="noopener">アクセス権限ページ</a>
+          から、いつでも本アプリのGoogleアカウントへのアクセスを取り消すことができます。
+          Googleのプライバシーポリシーは
+          <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>
+          をご確認ください。
+        </p>
+      </section>
 
-    <h2>お問い合わせ</h2>
-    <p>
-      本ポリシーに関するお問い合わせは、creatorpostplanner@gmail.com までご連絡ください。
-    </p>
+      <section class="legal-section">
+        <h2>5. Instagram APIの利用</h2>
+        <p>
+          本アプリは、Instagram APIを使用し、ユーザーが許可したInstagramプロアカウントのプロフィール情報、
+          投稿情報、投稿に関する基本的な指標を取得します。取得した情報は、投稿管理、カレンダー表示、
+          分析のために使用します。
+        </p>
+        <p>
+          本アプリは、現行バージョンではInstagramのDM機能を提供せず、DM内容の取得、保存、送信、分析を行いません。
+        </p>
+      </section>
 
-    <p><a href="../">トップへ戻る</a></p>
+      <section class="legal-section">
+        <h2>6. 保存場所と保存期間</h2>
+        <p>
+          現行バージョンでは、取得したSNSデータ、投稿予定、目標、メモは主にユーザーの端末内に保存されます。
+          OAuthのログイン維持に必要なトークンはiOS Keychainに保存されます。
+        </p>
+        <p>
+          本アプリは、ユーザーがSNS連携を解除する、アプリ内データを削除する、またはアプリを削除するまで、
+          アプリの機能提供に必要な範囲で情報を保持します。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7. 第三者提供・販売・広告利用</h2>
+        <p>
+          本アプリは、取得したYouTubeデータ、Instagramデータ、ユーザー入力情報を第三者へ販売しません。
+          また、現行バージョンでは、取得したSNSデータを第三者広告配信、信用評価、またはAIモデル学習のために提供しません。
+        </p>
+        <p>
+          法令に基づく場合、ユーザーの同意がある場合、または不正利用・セキュリティ対応に必要な場合を除き、
+          ユーザーのSNSデータを第三者に開示しません。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8. 安全管理措置</h2>
+        <p>
+          本アプリは、ログイン維持に必要なトークンをiOS Keychainに保存し、必要な範囲でのみAPIにアクセスします。
+          また、YouTube連携では読み取り専用スコープを使用し、不要な権限を要求しないよう努めます。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9. ユーザーによる管理・削除</h2>
+        <p>
+          ユーザーは、アプリ内のログアウトまたはSNS削除操作により、端末内に保存された該当SNSのログイン情報と関連データを削除できます。
+          Googleアカウント側からアクセス権を取り消すこともできます。詳しくは
+          <a href="../data-deletion/">データ削除案内</a>をご確認ください。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>10. 未成年者の利用</h2>
+        <p>
+          本アプリは、13歳未満の児童を対象としていません。未成年の方が利用する場合は、
+          保護者の同意を得たうえで利用してください。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>11. ポリシーの変更</h2>
+        <p>
+          本ポリシーは、法令、外部サービスの仕様変更、アプリ機能の変更に応じて改定される場合があります。
+          重要な変更がある場合は、本ページまたはアプリ内で告知します。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12. お問い合わせ</h2>
+        <p>
+          本ポリシー、データ削除、SNS連携に関するお問い合わせは、以下のメールアドレスまでご連絡ください。
+        </p>
+        <p><a href="mailto:creatorpostplanner@gmail.com">creatorpostplanner@gmail.com</a></p>
+      </section>
+
+      <p class="footer"><a href="../">トップへ戻る</a></p>
+    </article>
   </main>
 </body>
 </html>

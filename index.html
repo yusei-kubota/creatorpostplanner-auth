@@ -4,114 +4,92 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CreatorPostPlanner</title>
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #f5f5f7;
-      color: #111;
-    }
-
-    body {
-      margin: 0;
-      padding: 48px 22px;
-    }
-
-    main {
-      margin: 0 auto;
-      max-width: 760px;
-    }
-
-    h1 {
-      font-size: clamp(34px, 8vw, 64px);
-      letter-spacing: 0;
-      line-height: 1.05;
-      margin: 0 0 18px;
-    }
-
-    p {
-      color: #555;
-      font-size: 17px;
-      line-height: 1.8;
-      margin: 0 0 22px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 18px 48px rgb(0 0 0 / 8%);
-      margin-top: 34px;
-      padding: 28px;
-    }
-
-    h2 {
-      font-size: 21px;
-      margin: 0 0 14px;
-    }
-
-    ul {
-      color: #555;
-      line-height: 1.8;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    a {
-      color: #111;
-      font-weight: 700;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    nav a {
-      background: #111;
-      border-radius: 999px;
-      color: #fff;
-      padding: 12px 18px;
-      text-decoration: none;
-    }
-
-    footer {
-      color: #888;
-      font-size: 13px;
-      margin-top: 42px;
-    }
-  </style>
+  <meta name="description" content="CreatorPostPlannerは、YouTubeとInstagramの投稿予定、目標、投稿結果を管理するiOSアプリです。">
+  <link rel="stylesheet" href="./assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>CreatorPostPlanner</h1>
-    <p>
-      CreatorPostPlannerは、SNSクリエイターがYouTubeとInstagramのアカウント情報、
-      投稿予定、投稿結果をまとめて管理するためのiOSアプリです。
-    </p>
-
-    <section class="card">
-      <h2>主な機能</h2>
-      <ul>
-        <li>YouTubeチャンネル登録者数、投稿動画、再生数、いいね数、コメント数の取得</li>
-        <li>Instagramフォロワー数、投稿、サムネイル、いいね数、コメント数、再生数の取得</li>
-        <li>投稿カレンダー、目標管理、URLとメモの管理</li>
-        <li>投稿ごとの結果確認と分析</li>
-      </ul>
-    </section>
-
-    <nav aria-label="Legal links">
+  <header class="site-header">
+    <a class="brand" href="./">CreatorPostPlanner</a>
+    <nav class="site-nav" aria-label="Site navigation">
       <a href="./privacy/">プライバシーポリシー</a>
       <a href="./terms/">利用規約</a>
       <a href="./data-deletion/">データ削除案内</a>
     </nav>
+  </header>
 
-    <footer>
-      Contact: creatorpostplanner@gmail.com
-    </footer>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">SNS creator planning app</p>
+      <h1>SNS投稿を、目標と結果から管理する。</h1>
+      <p class="lead">
+        CreatorPostPlannerは、YouTubeとInstagramを使うSNSクリエイター向けのiOSアプリです。
+        登録者数・フォロワー数、投稿予定、投稿結果、メモをひとつのカレンダーで確認し、
+        目標達成に向けた投稿管理を行えます。
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Feature overview">
+      <article class="mini-card">
+        <h2>YouTube連携</h2>
+        <p>
+          ユーザー本人のYouTubeチャンネルを読み取り、チャンネル登録者数、投稿動画、
+          サムネイル、再生数、いいね数、コメント数を表示します。
+        </p>
+      </article>
+
+      <article class="mini-card">
+        <h2>Instagram連携</h2>
+        <p>
+          Instagramプロアカウントのフォロワー数、投稿、サムネイル、再生数、
+          いいね数、コメント数を取得し、投稿管理と分析に利用します。
+        </p>
+      </article>
+
+      <article class="mini-card">
+        <h2>投稿カレンダー</h2>
+        <p>
+          投稿予定と投稿済みコンテンツを日付ごとに整理します。
+          手動で追加した予定と、SNSから取得した投稿を同じ画面で確認できます。
+        </p>
+      </article>
+
+      <article class="mini-card">
+        <h2>目標と分析</h2>
+        <p>
+          SNSごとの現在数と目標数を管理し、投稿ごとの反応を振り返れます。
+          取得したデータは、ユーザー自身の投稿管理と分析のために使用します。
+        </p>
+      </article>
+    </section>
+
+    <section class="card section">
+      <h2>データの取り扱い</h2>
+      <p>
+        CreatorPostPlannerは、ユーザーが明示的にSNS連携を許可した場合にのみ、
+        必要な範囲のアカウント情報と投稿情報を取得します。取得したデータは、
+        アプリ内での表示、カレンダー反映、分析、ユーザーが入力した目標・メモの管理に使用します。
+      </p>
+      <p>
+        YouTube連携では読み取り専用スコープのみを使用し、動画の投稿、編集、削除は行いません。
+        Instagram連携でも、投稿管理と分析に必要な情報の取得に用途を限定します。
+      </p>
+      <div class="link-row">
+        <a class="button-link" href="./privacy/">プライバシーポリシー</a>
+        <a class="button-link secondary-link" href="./data-deletion/">データ削除案内</a>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>お問い合わせ</h2>
+      <p>
+        アプリ、データ削除、プライバシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。
+      </p>
+      <p><a href="mailto:creatorpostplanner@gmail.com">creatorpostplanner@gmail.com</a></p>
+    </section>
+
+    <p class="footer">
+      CreatorPostPlanner is not affiliated with, endorsed by, or sponsored by Google, YouTube, Meta, or Instagram.
+    </p>
   </main>
 </body>
 </html>

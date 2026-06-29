@@ -20,7 +20,7 @@
   <main class="page legal">
     <article class="card">
       <h1>プライバシーポリシー</h1>
-      <p class="meta">最終更新日: 2026年6月28日</p>
+      <p class="meta">CreatorPostPlanner | 最終更新日: 2026年6月28日</p>
 
       <p>
         CreatorPostPlanner（以下「本アプリ」といいます）は、SNSクリエイターがYouTubeおよびInstagramの
@@ -29,20 +29,24 @@
       </p>
 
       <section class="legal-section">
-        <h2>1. 適用範囲</h2>
+        <h2>1. はじめに</h2>
         <p>
-          本ポリシーは、本アプリおよび本アプリに関連して提供するWebページに適用されます。
+          本アプリは、ユーザーのプライバシーを尊重し、SNS連携に必要な範囲でのみ情報を取得します。
           YouTube、Google、Instagram、Metaなどの外部サービスには、それぞれのプライバシーポリシーと利用規約が適用されます。
         </p>
       </section>
 
       <section class="legal-section">
         <h2>2. 取得する情報</h2>
-        <p>
-          本アプリは、ユーザーが明示的にSNS連携を行った場合、またはユーザーがアプリ内で入力した場合に限り、
-          以下の情報を取得します。
-        </p>
+        <h3>2.1 ユーザーが入力する情報</h3>
+        <ul>
+          <li>目標数</li>
+          <li>投稿予定</li>
+          <li>タイトル、URL、メモ</li>
+          <li>手動で追加したサムネイル画像</li>
+        </ul>
 
+        <h3>2.2 SNS連携により取得する情報</h3>
         <div class="table-wrap">
           <table>
             <thead>
@@ -92,19 +96,56 @@
       </section>
 
       <section class="legal-section">
-        <h2>4. YouTube API Servicesの利用</h2>
+        <h2>4. 第三者サービスとの通信</h2>
+        <p>本アプリは、以下の目的で外部サービスと通信します。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>サービス</th>
+                <th>目的</th>
+                <th>送信・取得されるデータ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YouTube Data API v3</td>
+                <td>YouTubeチャンネルと投稿動画の読み取り</td>
+                <td>チャンネル情報、投稿動画情報、再生数、いいね数、コメント数、サムネイル</td>
+              </tr>
+              <tr>
+                <td>Instagram API</td>
+                <td>Instagramプロアカウントと投稿情報の読み取り</td>
+                <td>ユーザーネーム、フォロワー数、投稿情報、再生数、いいね数、コメント数、サムネイル</td>
+              </tr>
+              <tr>
+                <td>Logo.dev</td>
+                <td>SNSやサービスロゴの表示</td>
+                <td>ロゴ取得に必要なサービスのドメイン名</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>4.1 YouTube API Servicesの利用</h3>
         <p>
           本アプリは、YouTube Data API Servicesを使用します。YouTube連携では
           <code>https://www.googleapis.com/auth/youtube.readonly</code> の読み取り専用スコープを使用し、
-          ユーザー本人のYouTubeチャンネルおよび投稿動画の情報を取得します。
+          ユーザー本人のYouTubeチャンネルおよび投稿動画の情報を取得します。取得したYouTubeデータは、
+          本アプリ内でチャンネル登録者数、投稿カレンダー、投稿別の再生数・いいね数・コメント数、
+          サムネイル、分析結果を表示するためだけに使用します。
         </p>
         <p>
           本アプリは、YouTube上の動画の投稿、編集、削除、コメント投稿、チャンネル設定の変更を行いません。
+          また、取得したYouTubeデータを第三者へ販売せず、第三者広告配信や信用評価のために使用しません。
           Google APIから受け取った情報の利用は、
           <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>
           （Limited Use要件を含みます）に従います。
         </p>
         <p>
+          YouTube連携機能を利用する場合、ユーザーには
+          <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube利用規約</a>
+          も適用されます。
           ユーザーは、Googleアカウントの
           <a href="https://myaccount.google.com/permissions" rel="noopener">アクセス権限ページ</a>
           から、いつでも本アプリのGoogleアカウントへのアクセスを取り消すことができます。
@@ -112,10 +153,8 @@
           <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>
           をご確認ください。
         </p>
-      </section>
 
-      <section class="legal-section">
-        <h2>5. Instagram APIの利用</h2>
+        <h3>4.2 Instagram APIの利用</h3>
         <p>
           本アプリは、Instagram APIを使用し、ユーザーが許可したInstagramプロアカウントのプロフィール情報、
           投稿情報、投稿に関する基本的な指標を取得します。取得した情報は、投稿管理、カレンダー表示、
@@ -127,7 +166,7 @@
       </section>
 
       <section class="legal-section">
-        <h2>6. 保存場所と保存期間</h2>
+        <h2>5. データの保存と削除</h2>
         <p>
           現行バージョンでは、取得したSNSデータ、投稿予定、目標、メモは主にユーザーの端末内に保存されます。
           OAuthのログイン維持に必要なトークンはiOS Keychainに保存されます。
@@ -136,10 +175,15 @@
           本アプリは、ユーザーがSNS連携を解除する、アプリ内データを削除する、またはアプリを削除するまで、
           アプリの機能提供に必要な範囲で情報を保持します。
         </p>
+        <p>
+          ユーザーは、アプリ内のログアウトまたはSNS削除操作により、端末内に保存された該当SNSのログイン情報と関連データを削除できます。
+          Googleアカウント側からアクセス権を取り消すこともできます。詳しくは
+          <a href="../data-deletion/">データ削除案内</a>をご確認ください。
+        </p>
       </section>
 
       <section class="legal-section">
-        <h2>7. 第三者提供・販売・広告利用</h2>
+        <h2>6. 第三者提供・販売・広告利用</h2>
         <p>
           本アプリは、取得したYouTubeデータ、Instagramデータ、ユーザー入力情報を第三者へ販売しません。
           また、現行バージョンでは、取得したSNSデータを第三者広告配信、信用評価、またはAIモデル学習のために提供しません。
@@ -151,7 +195,7 @@
       </section>
 
       <section class="legal-section">
-        <h2>8. 安全管理措置</h2>
+        <h2>7. 安全管理措置</h2>
         <p>
           本アプリは、ログイン維持に必要なトークンをiOS Keychainに保存し、必要な範囲でのみAPIにアクセスします。
           また、YouTube連携では読み取り専用スコープを使用し、不要な権限を要求しないよう努めます。
@@ -159,16 +203,7 @@
       </section>
 
       <section class="legal-section">
-        <h2>9. ユーザーによる管理・削除</h2>
-        <p>
-          ユーザーは、アプリ内のログアウトまたはSNS削除操作により、端末内に保存された該当SNSのログイン情報と関連データを削除できます。
-          Googleアカウント側からアクセス権を取り消すこともできます。詳しくは
-          <a href="../data-deletion/">データ削除案内</a>をご確認ください。
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>10. 未成年者の利用</h2>
+        <h2>8. 未成年者の利用</h2>
         <p>
           本アプリは、13歳未満の児童を対象としていません。未成年の方が利用する場合は、
           保護者の同意を得たうえで利用してください。
@@ -176,7 +211,7 @@
       </section>
 
       <section class="legal-section">
-        <h2>11. ポリシーの変更</h2>
+        <h2>9. ポリシーの変更</h2>
         <p>
           本ポリシーは、法令、外部サービスの仕様変更、アプリ機能の変更に応じて改定される場合があります。
           重要な変更がある場合は、本ページまたはアプリ内で告知します。
@@ -184,7 +219,20 @@
       </section>
 
       <section class="legal-section">
-        <h2>12. お問い合わせ</h2>
+        <h2>10. 商標および第三者ブランドについて</h2>
+        <p>
+          本アプリ内で表示されるYouTube、Instagram、その他サービス名、ロゴ、アイコン、商標は、
+          それぞれの権利者に帰属します。本アプリは、Google、YouTube、Meta、Instagram、Logo.devと
+          提携、後援、承認されたものではありません。
+        </p>
+        <p>
+          これらの名称やロゴは、ユーザーが連携先SNSやアカウントを識別しやすくする目的で使用します。
+          ロゴ画像は <a href="https://www.logo.dev/" rel="noopener">Logo.dev</a> を通じて取得する場合があります。
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>11. お問い合わせ</h2>
         <p>
           本ポリシー、データ削除、SNS連携に関するお問い合わせは、以下のメールアドレスまでご連絡ください。
         </p>

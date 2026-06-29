@@ -4,15 +4,15 @@ Public pages for CreatorPostPlanner OAuth and app review.
 
 Pages:
 
-- App home: https://yusei-kubota.github.io/creatorpostplanner-auth/
-- Privacy policy: https://yusei-kubota.github.io/creatorpostplanner-auth/privacy/
-- Terms: https://yusei-kubota.github.io/creatorpostplanner-auth/terms/
-- Data deletion: https://yusei-kubota.github.io/creatorpostplanner-auth/data-deletion/
+- App home: https://creatorpostplanner.yuseidev.com/
+- Privacy policy: https://creatorpostplanner.yuseidev.com/privacy/
+- Terms: https://creatorpostplanner.yuseidev.com/terms/
+- Data deletion: https://creatorpostplanner.yuseidev.com/data-deletion/
 
 Instagram OAuth redirects to this GitHub Pages site first, then this page opens the iOS app with the original query parameters.
 
 Meta redirect URI:
 
 ```text
-https://yusei-kubota.github.io/creatorpostplanner-auth/instagram-auth/
+https://creatorpostplanner.yuseidev.com/instagram-auth/
 ```

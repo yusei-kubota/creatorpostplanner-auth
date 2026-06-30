@@ -11,8 +11,14 @@ Pages:
 
 Instagram OAuth redirects to this GitHub Pages site first, then this page opens the iOS app with the original query parameters.
 
-Meta redirect URI:
+Instagram redirect URI:
 
 ```text
 https://creatorpostplanner.yuseidev.com/instagram-auth/
+```
+
+Facebook redirect URI:
+
+```text
+https://creatorpostplanner.yuseidev.com/facebook-auth/
 ```

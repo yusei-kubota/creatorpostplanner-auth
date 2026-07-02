@@ -22,3 +22,9 @@ Facebook redirect URI:
 ```text
 https://creatorpostplanner.yuseidev.com/facebook-auth/
 ```
+
+Threads redirect URI:
+
+```text
+https://creatorpostplanner.yuseidev.com/threads-auth/
+```
